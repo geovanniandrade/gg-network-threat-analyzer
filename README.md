@@ -58,3 +58,17 @@ Adicionar parser de PCAP e correlação contextual com inteligência de ameaças
 ---
 
 **GG // Security Applications** · Segurança acessível, investigação responsável e resultados verificáveis.
+
+
+---
+## 🧭 Navegação e demonstração
+
+- [🌐 Interface web](https://geovanniandrade.github.io/gg-network-threat-analyzer/)
+- [📋 Checklist de qualidade, testes e limitações](QUALITY.md)
+- [🧪 Exemplo fictício para demonstração](examples/gg-network-demo.csv)
+
+**Identidade visual:** Ciano. **Versão:** MVP 0.2 (identificador documental; não significa homologação).
+
+**Fluxo recomendado:** usar o exemplo fictício → revisar os resultados → abrir relatório → salvar PDF apenas após conferir o conteúdo. Em ambientes reais, verificar autorização, origem dos dados e precisão das conclusões. Nunca incluir inventário, nomes reais de usuários ou dados sensíveis em issues e repositórios públicos.
+
+**Limites:** ferramentas de triagem, não substituem avaliação profissional nem comprovam conformidade. As validações executadas e pendentes estão em [QUALITY.md](QUALITY.md).
