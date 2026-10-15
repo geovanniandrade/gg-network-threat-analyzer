@@ -8,6 +8,22 @@ Triagem local de registros de conexões de rede.
 
 Contagem de conexões, destinos distintos e portas de destino mais frequentes.
 
+## 🧭 Modos de utilização
+
+**🧪 Demonstração:** clique em **Carregar exemplo fictício** ou **Baixar CSV de exemplo**. Nenhuma captura de rede é realizada.
+
+**🏢 Dados autorizados:** importe somente um CSV preparado a partir de logs cuja utilização foi autorizada. A ferramenta não captura pacotes nem se conecta a firewalls.
+
+O formato esperado é:
+
+```csv
+src_ip,dst_ip,dst_port,proto
+192.0.2.10,198.51.100.20,443,TCP
+192.0.2.10,203.0.113.30,22,TCP
+```
+
+Os endereços acima são reservados para documentação.
+
 ## 🚀 Como utilizar
 
 1. Exporte ou prepare um CSV autorizado com `src_ip,dst_ip,dst_port,proto`.
