@@ -24,6 +24,21 @@ src_ip,dst_ip,dst_port,proto
 
 Os endereços acima são reservados para documentação.
 
+## 📥 Coletar conexões TCP atuais (opcional)
+
+O [coletor PowerShell](collector/Collect-NetworkConnections.ps1) exporta apenas um **snapshot de conexões TCP estabelecidas no próprio computador**. Ele não realiza captura PCAP, não consulta logs históricos e não analisa a rede inteira.
+
+1. Baixe, revise e autorize o script `collector/Collect-NetworkConnections.ps1`.
+2. Execute-o por um método aprovado, adaptando o caminho:
+
+```powershell
+& "C:\CAMINHO\Collect-NetworkConnections.ps1" -OutputPath "C:\CAMINHO\gg-network-connections.csv"
+```
+
+3. Importe `gg-network-connections.csv` na interface web.
+
+Não contorne políticas de execução. Para histórico de conexões ou múltiplos endpoints, obtenha exportações autorizadas de ferramentas de rede/telemetria e normalize-as para o CSV esperado.
+
 ## 🚀 Como utilizar
 
 1. Exporte ou prepare um CSV autorizado com `src_ip,dst_ip,dst_port,proto`.
